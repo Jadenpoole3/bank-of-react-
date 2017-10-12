@@ -5,9 +5,9 @@ import Debits from './Debits.jsx'
 // class DebitsList extends Component {
 //     render(props) {
 
-const DebitsComponent = (props) => {
+const DebitsList = (props) => {
 
-    const DebitsList = props.debits.map((debit, index) => {
+    const debitsComponents = props.debits.map((debit, index) => {
         return <Debits
       
                description={debit.description}
@@ -21,7 +21,7 @@ const DebitsComponent = (props) => {
     return (
       <div>
           <h1>debits List</h1>
-          {DebitsList}
+          {debitsComponents}
 
       </div>
       
